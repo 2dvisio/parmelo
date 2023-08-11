@@ -1,0 +1,42 @@
+- title: Quran gate
+  location:
+    latitude: 29.635729
+    longitude: 52.562218
+
+- title: Saadi tomb
+  location:
+    latitude: 29.6225
+    longitude: 52.5832
+
+- title: Hafez tomb
+  location:
+    latitude: 29.625916
+    longitude: 52.558962
+
+- title: Bazaar Vakil
+  location:
+    latitude: 29.6149806
+    longitude: 52.5467972
+
+- title: Eram Garden
+  location:
+    latitude: 29.635833
+    longitude: 52.525278
+
+- title: Naranjastan Qavam & Zinat ol Molk House
+  location:
+    latitude: 29.607604
+    longitude: 52.552388
+
+- title: Afif Abad Garden
+  location:
+    latitude: 29.622483
+    longitude: 52.498311
+
+- title: Arg-e Karimkhan (Castle of Karimkhan)
+  location:
+    latitude: 29.617614
+    longitude: 52.544679
+
+
+# https://github.com/ayastreb/jekyll-maps

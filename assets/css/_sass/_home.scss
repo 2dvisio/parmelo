@@ -1,0 +1,87 @@
+.featured-posts {
+  height: 200px;
+  margin: 5px 10px 10px;
+  vertical-align: middle;
+  border: 1px solid lightgrey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+.featured-posts h2 {
+   display: inline-block;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.6);
+   text-align: center;
+   margin-top: 150px;
+   height: 50px;
+   width: 100%;
+   border-top: 1px solid white;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   //border-top-right-radius: 15px;
+}
+.featured-posts span {
+   color: white;
+   font: bold 1.1em $base-font-family;
+   //letter-spacing: -1px;
+   //-webkit-text-stroke: 1px black;
+}
+
+@media all and (max-width: 780px) {
+  .featured-posts span {
+    color: white;
+    font: bold .9em $base-font-family;
+  }
+}
+
+@media all and (max-device-width: 500px)
+{
+  .featured-posts span {
+    color: white;
+    font: bold .8em $base-font-family;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .featured-posts span {
+    color: white;
+    font: bold .9em $base-font-family;
+  }
+}
+
+
+.featured-posts span a {
+  color: white;
+}
+.featured-posts h1 {
+  //margin: 10px;
+}
+
+/*
+  Pagination
+*/
+
+.pagination {
+  text-align: center;
+}
+.pagination a {
+  text-decoration: none;
+}
+.pagination-button {
+  color: #999;
+  border: 1px solid #e0e0e0;
+  padding: 15px 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pagination-active {
+  color: black;
+}
+.pagination-active:hover {
+  background-color: #e0e0e0;
+}

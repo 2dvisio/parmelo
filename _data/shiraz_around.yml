@@ -1,0 +1,16 @@
+- title: Shiraz
+  location:
+    latitude: 29.591768
+    longitude: 52.583698
+
+- title: Persepolis
+  location:
+    latitude: 29.9355
+    longitude: 52.8916
+
+- title: Pasargad (Tomb of Cyrus)
+  location:
+    latitude: 30.1940
+    longitude: 53.1672
+
+# https://github.com/ayastreb/jekyll-maps

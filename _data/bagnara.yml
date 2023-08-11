@@ -1,0 +1,27 @@
+- title: Casa Velardo
+  #image: "/assets/icons/suit.svg"
+  #marker_img: "/assets/icons/suit.svg"
+  location:
+    latitude: 38.286928
+    longitude: 15.805094
+
+- title: Hotel Palma d'Oro
+  #marker_img: "/assets/icons/suit.svg"
+  location:
+    latitude: 38.287228
+    longitude: 15.802638
+
+- title: Grand Hotel Victoria
+  location:
+    latitude: 38.286751
+    longitude: 15.802519
+
+- title: Chiesa Santa Maria e i XII Apostoli
+  location:
+    latitude: 38.287164
+    longitude: 15.805285
+
+- title: Villa Chiringuito
+  location:
+    latitude: 38.236693
+    longitude: 15.659884

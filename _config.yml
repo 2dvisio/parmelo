@@ -1,0 +1,14 @@
+# Site Settings
+
+include: ['_pages']
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-maps]
+
+
+sass:
+  sass_dir: assets/css
+  style: :nested

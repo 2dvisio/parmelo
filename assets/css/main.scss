@@ -1,0 +1,112 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+/*
+  Site variables
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik|Source+Code+Pro|Itim');
+
+$base-font-family: 'Rubik', cursive;
+
+$brand-color: black;
+
+$container-width: 1100px;
+
+$tablet-width: 600px;
+
+$phone-width: 480px;
+
+$header-thickness: 56px;
+
+@import "_sass/-sections-dir";
+
+.round {
+  border-radius: 15px;
+}
+
+.photo {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.caption  {
+  font-family: $base-font-family;
+  background-color: black;
+  text-align: center;
+  color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+$i: 100;
+@while $i > 0 {
+  .perc#{$i} { width: $i/100 * 100%; }
+  $i: $i - 10;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+@media all and (max-width: 900px) {
+  .float-left, .float-right{
+    float: none;
+    width: 100%;
+  }
+
+  .flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  $i: 100;
+  @while $i > 0 {
+    .perc#{$i} { width: 100%; }
+    $i: $i - 10;
+  }
+
+  $headings : h1 h2 h3 h4 h5 h6;
+  @each $h in $headings {
+    #{$h} { width: 100%; }
+  }
+
+}

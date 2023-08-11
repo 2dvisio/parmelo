@@ -1,0 +1,33 @@
+
+#countdown{
+  font: bold 18px/25px 'Itim', cursive;
+  word-wrap:break-word;
+	width: 430px;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+#countdown #tiles{
+	position: relative;
+	z-index: 1;
+}
+
+#countdown #tiles > span{
+	font-size:48px;
+	margin: 0 7px;
+  display: inline-block;
+	position: relative;
+}
+
+#tiles i{
+	font-size: 12px;
+  display: block;
+}
+
+.countdowntitle {
+  font-size: 30px;
+}

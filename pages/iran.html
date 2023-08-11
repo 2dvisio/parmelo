@@ -1,0 +1,72 @@
+---
+layout: page
+title: Iran
+---
+
+<div id="countdown">
+  <div id='tiles'></div>
+</div>
+
+{% for post in site.categories.iran %}
+  <div class="article">
+    <a href="{{ site.github.url }}{{ post.url }}">
+      <div class="featured-posts" {% if post.image.feature %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image.feature }})"{% endif %}>
+        <h2><span>{{ post.title }}</span></h2>
+      </div>
+    </a>
+  </div>
+{% endfor %}
+
+<script>
+  var target_date = new Date("9 May 2018 11:00:00 GMT+3:30").getTime(); // set the countdown date
+  var days, hours, minutes, seconds; // variables for time units
+
+  var countdown = document.getElementById("tiles"); // get tag element
+
+  getCountdown();
+
+  var intervalCountdown = setInterval(function () { getCountdown(); }, 1000);
+
+  function getCountdown(){
+
+  	// find the amount of "seconds" between now and target
+  	var current_date = new Date().getTime();
+  	var seconds_left = (target_date - current_date) / 1000;
+
+  	days = parseInt(seconds_left / 86400);
+    days_p = pad( days );
+  	seconds_left = seconds_left % 86400;
+
+  	hours = parseInt(seconds_left / 3600);
+    hours_p = pad( hours );
+  	seconds_left = seconds_left % 3600;
+
+    minutes = parseInt(seconds_left / 60);
+    minutes_p = pad( minutes );
+
+    seconds = parseInt( seconds_left % 60 );
+    seconds_p = pad( seconds );
+
+    if (days == 0 && hours <= 0 && minutes <= 0) {
+      clearInterval(intervalCountdown);
+      countdown.innerHTML = '<img src="{{ site.github.url }}/{{ site.data.settings.headerimagebefore }}" width="200"/>';
+      countdown.innerHTML += '<h1 class="countdowntitle">It\'s today!!!</h1>';
+    } else if (days < 0) {
+      countdown.innerHTML = '<h1 class="countdowntitle">It was </h1>';
+      // format countdown string + set tag value
+      countdown.innerHTML += (days < 0 ? '<span>' + pad( -days ) + '<i class="label">Days</i></span>' : '') +
+                            (days < 0 || hours < 0 ? '<span>' + pad( -hours ) + '<i class="label">Hours</i></span>' : '');
+      countdown.innerHTML += '<h1 class="countdowntitle"> ago!!! </h1>';
+    } else {
+      countdown.innerHTML = '<h1 class="countdowntitle">It\'s in</h1>';
+      // format countdown string + set tag value
+    	countdown.innerHTML += (days > 0 ? '<span>' + days_p + '<i class="label">Days</i></span>' : '') +
+                            (days > 0 || hours > 0 ? '<span>' + hours_p + '<i class="label">Hours</i></span>' : '') +
+                            (days > 0 || hours > 0 || minutes > 0 ? '<span>' + minutes_p + '<i class="label">Minutes</i></span>'  : '');
+    }
+  }
+
+  function pad(n) {
+  	return (n < 10 ? '0' : '') + n;
+  }
+</script>

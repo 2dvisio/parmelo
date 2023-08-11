@@ -1,0 +1,29 @@
+title: "P and C"
+headerimagebefore: "assets/deco/couple2_getting_porcupine.png"
+headerimageafter: "assets/deco/couple2.png"
+tagline: "A life journey begins with love"
+description: "We are getting married!"
+
+# Authors documented under _data
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'millennial-3'
+
+menu:
+- {name: 'Iran', folder: 'pages', file: 'iran.html'}
+- {name: 'Italy', folder: 'pages', file: 'italy.html'}
+- {name: '🎁 Gift', folder: 'pages', file: 'giftlist.html'}
+#- {name: '🍯 Honey 🌛 moon', folder: 'pages', file: 'honeymoon.html'}
+- {name: 'Photos', folder: 'pages', file: 'photos.html'}
+- {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+
+social:
+- {icon: 'instagram', link: 'https://instagram.com/parmelo.mogardo'}
+- {icon: 'envelope', link: 'mailto:parmelo.mogardol@gmail.com'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+
+google_ID: "UA-111440300-1"

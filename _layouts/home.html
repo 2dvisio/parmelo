@@ -1,0 +1,61 @@
+---
+layout: default
+title: Home
+---
+
+<img id="imgBefore" style="display: none;" src="{{ site.github.url }}/{{ site.data.settings.headerimagebefore }}" width="200"/>
+<img id="imgAfter" style="display: none;" src="{{ site.github.url }}/{{ site.data.settings.headerimageafter }}" width="200"/>
+
+<script>
+  if ((new Date()) < (new Date("14 September 2018"))) {
+    document.getElementById("imgBefore").style.display = '';
+  } else {
+    document.getElementById("imgAfter").style.display = '';
+  }
+</script>
+
+<div class="flex_row">
+  <div class="flex_container perc50">
+    <h1 class="center">Iran</h1>
+    {% for post in site.categories.iran %}
+      <div class="article">
+        <a href="{{ site.github.url }}{{ post.url }}">
+          <div class="featured-posts" {% if post.image.feature %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image.feature }})"{% endif %}>
+            <h2><span>{{ post.title }}</span></h2>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="flex_container perc50">
+    <h1 class="center">Italy</h1>
+    {% for post in site.categories.italy %}
+      <div class="article">
+        <a href="{{ site.github.url }}{{ post.url }}">
+          <div class="featured-posts" {% if post.image.feature %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image.feature }})"{% endif %}>
+            <h2><span>{{ post.title }}</span></h2>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% if paginator.next_page or paginator.previous_page %}
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Older</a>
+  {% else %}
+    <span class="pagination-button">Older</span>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Newer</a>
+    {% else %}
+      <span class="pagination-button">Newer</span>
+  {% endif %}
+</div>
+{% endif %}

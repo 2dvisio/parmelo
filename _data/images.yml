@@ -1,0 +1,37 @@
+reggio:
+  title: "Reggio Calabria"
+  images:
+    - name: "Vista Etna"
+      file: "/assets/img/reggio_etna2.jpg"
+    - name: "Villa Zerbi"
+      file: "/assets/img/reggio_villa_zerbi.jpg"
+    - name: "Duomo"
+      file: "/assets/img/reggio_duomo.jpg"
+    - name: "Castello"
+      file: "/assets/img/reggio_castello.jpg"
+    - name: "Bronzi di Riace"
+      file: "/assets/img/reggio_bronzi.jpg"
+    - name: "Anfiteatromare"
+      file: "/assets/img/reggio_anfiteatromare.jpg"
+sicily:
+  title: "Taormina (1h30), Catania, Etna mountain (~2h30), Palermo (3h30), Siracusa (2h45)"
+  images:
+    - name: ""
+      file: "/assets/img/sicilia1.jpg"
+    - name: ""
+      file: "/assets/img/sicilia2.jpg"
+    - name: ""
+      file: "/assets/img/sicilia3.jpg"
+    - name: ""
+      file: "/assets/img/sicilia4.jpg"
+eolie:
+  title: "Lipari, Salina, Vulcano, Stromboli, Panarea, Filicudi e Alicudi"
+  images:
+    - name: ""
+      file: "/assets/img/eolie1.jpg"
+    - name: ""
+      file: "/assets/img/eolie2.jpg"
+    - name: ""
+      file: "/assets/img/eolie3.jpg"
+    - name: ""
+      file: "/assets/img/eolie4.jpg"

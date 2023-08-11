@@ -1,0 +1,13 @@
+
+{% if site.data.images[city].title %}
+  <h3>{{ site.data.images[city].title }}</h3>
+{% endif %}
+
+<div id="container{{ city }}">
+ {% for pic in site.data.images[city].images %}
+    <div class="photo">
+      <img class="item" src="{{ pic.file }}" title="{{ pic.name }}"/>
+      <p class="caption">{{ pic.name }}</p>
+  </div>
+ {% endfor %}
+ </div>
