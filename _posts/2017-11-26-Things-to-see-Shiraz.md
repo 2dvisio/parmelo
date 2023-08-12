@@ -87,5 +87,3 @@ The **Nasir Al Molk Mosque**. Not to be missed, one of the most colourful buildi
 ![Shiraz]({{"/assets/img/shiraz_nasir_molk.jpg"}})
 
 
-
-{% google_map src="_data/iran_tovisit.yml" zoom="13" width="100%" height="400" %}

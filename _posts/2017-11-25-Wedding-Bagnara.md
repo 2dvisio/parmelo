@@ -34,14 +34,6 @@ Via Vittorio Emanuele II, 179
 
 [Click here for directions](https://goo.gl/maps/gZXZidvZFMJ2)
 
-{%
-  google_map
-  src='_data/bagnara.yml'
-  zoom='10'
-  width='100%'
-  height='400'
-%}
-
 ##     &nbsp;
 ##     &nbsp;
 ##     &nbsp;

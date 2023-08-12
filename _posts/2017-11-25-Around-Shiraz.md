@@ -53,6 +53,3 @@ National Park of Bamou, a protected area at North of Shiraz where free, wild ani
 
 Maharloo Lake (Salt Lake), a seasonal salt lake rich in potassium and other salts.
 ![Shiraz]({{"/assets/img/Mahrloo-Lake.jpg"}})
-
-
-{% google_map src="_data/shiraz_around.yml" zoom="9" width="100%" height="400" %}
